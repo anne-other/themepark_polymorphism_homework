@@ -32,4 +32,9 @@ public class LogFlumeTest {
     public void hasMinHeight() {
         assertEquals(1.7, logFlume.getMinHeight(), 0.1);
     }
+
+    @Test
+    public void hasWaterWarning() {
+        assertEquals("Warning, you will get soaked", logFlume.warning());
+    }
 }
