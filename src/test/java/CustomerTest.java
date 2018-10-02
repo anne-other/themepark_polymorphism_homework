@@ -67,4 +67,10 @@ public class CustomerTest {
         boolean cantRide = customer1.checkCanRide(rollerCoaster);
         assertEquals(false, cantRide);
     }
+
+    @Test
+    public void canPay() {
+        customer.pay(rollerCoaster);
+        assertEquals(5.50, customer.getMoney(), 0.01);
+    }
 }

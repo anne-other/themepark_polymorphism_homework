@@ -47,4 +47,9 @@ public class Customer {
         }
         return false;
     }
+
+    public void pay(Ride ride) {
+        double cost = ride.getPrice();
+        money -= cost;
+    }
 }
