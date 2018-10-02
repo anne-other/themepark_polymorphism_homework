@@ -17,4 +17,8 @@ public class Customer {
     public double getHeight() {
         return height;
     }
+
+    public double getMoney() {
+        return money;
+    }
 }
