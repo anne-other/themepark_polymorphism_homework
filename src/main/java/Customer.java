@@ -13,4 +13,8 @@ public class Customer {
     public int getAge() {
         return age;
     }
+
+    public double getHeight() {
+        return height;
+    }
 }

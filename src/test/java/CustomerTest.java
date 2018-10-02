@@ -16,4 +16,9 @@ public class CustomerTest {
     public void hasAge() {
         assertEquals(30, customer.getAge());
     }
+
+    @Test
+    public void hasHeight() {
+        assertEquals(1.7, customer.getHeight(), 0.1);
+    }
 }
