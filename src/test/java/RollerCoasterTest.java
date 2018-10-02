@@ -32,4 +32,9 @@ public class RollerCoasterTest {
     public void hasMinHeight() {
         assertEquals(1.5, rollerCoaster.getMinHeight(), 0.1);
     }
+
+    @Test
+    public void hasHealthWarning() {
+        assertEquals("Do not ride with spinal injuries", rollerCoaster.healthWarning());
+    }
 }
