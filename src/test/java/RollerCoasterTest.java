@@ -18,5 +18,9 @@ public class RollerCoasterTest {
         assertEquals("Nemisis", rollerCoaster.getName());
     }
 
+    @Test
+    public void hasPrice() {
+        assertEquals(4.99, rollerCoaster.getPrice(), 0.01);
+    }
 
 }
