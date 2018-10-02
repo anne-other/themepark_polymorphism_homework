@@ -1,3 +1,5 @@
+import rides.Ride;
+
 public class Customer {
 
     private int age;
@@ -20,5 +22,13 @@ public class Customer {
 
     public double getMoney() {
         return money;
+    }
+
+    public boolean checkAge(Ride ride) {
+        int requirement = ride.getMinAge();
+        if (age > requirement){
+            return true;
+        }
+        return false;
     }
 }
