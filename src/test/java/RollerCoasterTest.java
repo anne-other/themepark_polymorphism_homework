@@ -27,4 +27,9 @@ public class RollerCoasterTest {
     public void hasMinAge() {
         assertEquals(10, rollerCoaster.getMinAge());
     }
+
+    @Test
+    public void hasMinHeight() {
+        assertEquals(1.5, rollerCoaster.getMinHeight(), 0.1);
+    }
 }
