@@ -40,4 +40,11 @@ public class Customer {
         }
         return false;
     }
+
+    public boolean checkCanRide(Ride ride) {
+        if (checkAge(ride) && checkHeight(ride)){
+            return true;
+        }
+        return false;
+    }
 }
