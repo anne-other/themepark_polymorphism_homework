@@ -7,7 +7,7 @@ public abstract class Ride {
     private int minAge;
     private double minHeight;
 
-    public void Ride(String name, double price, int minAge, double minHeight){
+    public Ride(String name, double price, int minAge, double minHeight){
         this.name = name;
         this.price = price;
         this.minAge = minAge;
