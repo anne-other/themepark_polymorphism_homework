@@ -43,4 +43,16 @@ public class CustomerTest {
         boolean notOldEnough = customer1.checkAge(rollerCoaster);
         assertEquals(false, notOldEnough);
     }
+
+    @Test
+    public void customerIsTallEnough() {
+        boolean tallEnough = customer.checkHeight(rollerCoaster);
+        assertEquals(true, tallEnough);
+    }
+
+    @Test
+    public void customerIsNotTallEnough() {
+        boolean notTallEnough = customer1.checkHeight(rollerCoaster);
+        assertEquals(false, notTallEnough);
+    }
 }

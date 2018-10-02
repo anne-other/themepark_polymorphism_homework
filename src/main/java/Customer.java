@@ -1,4 +1,5 @@
 import rides.Ride;
+import rides.RollerCoaster;
 
 public class Customer {
 
@@ -27,6 +28,14 @@ public class Customer {
     public boolean checkAge(Ride ride) {
         int requirement = ride.getMinAge();
         if (age > requirement){
+            return true;
+        }
+        return false;
+    }
+
+    public boolean checkHeight(Ride ride) {
+        double requirement = ride.getMinHeight();
+        if (height > requirement){
             return true;
         }
         return false;
